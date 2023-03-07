@@ -1,0 +1,27 @@
+{
+  "name": "video-chat-program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maks6831/node-video-chat-program.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maks6831/node-video-chat-program/issues"
+  },
+  "homepage": "https://github.com/Maks6831/node-video-chat-program#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "uuid": "^9.0.0"
+  }
+}
