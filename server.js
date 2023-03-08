@@ -1,14 +1,17 @@
 const express = require('express');
 // express is a backend web application framework.
 const app = express();
+const path = require('path');
 
 const server = require('http').Server(app);
 const { v4: uuidv4 } = require('uuid');
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('room');
+    res.redirect(`/${uuidv4()}`);
 })
 
 app.get('/:room', (req, res) =>{
